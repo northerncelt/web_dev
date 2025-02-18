@@ -1,3 +1,6 @@
+// Declare namedColors globally
+let namedColors = {};
+
 // Function to update color based on the input source
 function updateColor(source) {
     const hexInput = document.getElementById('hex');
@@ -8,7 +11,7 @@ function updateColor(source) {
     
     if (source === 'hex') { 
         const rgb = hexToRgb(hexInput.value);
-        const hsl = rgbToHsl(...rgb.split(','));
+        const hsl = rgbToHsl(...rgb.split(',').map(Number));
         rgbInput.value = rgb;
         hslInput.value = hsl;
         colorInput.value = Object.keys(namedColors).find(name => namedColors[name] === hexInput.value.toUpperCase()) || hexInput.value;
@@ -50,13 +53,14 @@ function setupColorInputs() {
             return response.json();
         })
         .then(data => { // Store named colors in a global variable
-            window.namedColors = data;
+            namedColors = data;
             console.log('namedColors loaded:', namedColors); // Add this line for debugging
 
             document.getElementById('hex').addEventListener('input', () => updateColor('hex'));
             document.getElementById('rgb').addEventListener('input', () => updateColor('rgb'));
             document.getElementById('hsl').addEventListener('input', () => updateColor('hsl'));
             document.getElementById('color').addEventListener('input', () => updateColor('color'));
+            document.getElementById('color').addEventListener('keyup', showColorDropdown);
         })
         .catch(error => console.error('Error loading named_colors.json:', error));
 }
@@ -105,7 +109,7 @@ function hexToRgb(hex) {
     const bigint = parseInt(hex, 16);
     const r = (bigint >> 16) & 255;
     const g = (bigint >> 8) & 255;
-    const b = bigint & 255;
+    const b = (bigint & 255);
     return `${r},${g},${b}`;
 }
 

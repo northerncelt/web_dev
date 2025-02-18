@@ -10,7 +10,27 @@ body {
     background-color: #f0f0f0;
 }
 
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
 /* Container styling */
+.global-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    height: auto;
+}
+
 .container {
     background-color: white;
     padding: 20px;
@@ -28,6 +48,15 @@ body {
 .color-input {
     margin: 10px;
     position: relative; /* Ensure the dropdown is positioned relative to the input */
+}
+
+/* Input box styling */
+.color-input input {
+    width: 200px; /* Set the width of the input boxes */
+    padding: 5px; /* Add padding inside the input boxes */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Add rounded corners */
 }
 
 /* Color output text styling */
@@ -68,4 +97,21 @@ body {
 /* Change color of dropdown items on hover */
 .dropdown-content div:hover {
     background-color: #f1f1f1;
+}
+
+/* Button styling */
+button {
+    margin-top: 10px; /* Add margin on top */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 16px; /* Set the font size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add rounded corners */
+    background-color: #007bff; /* Set background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Button hover styling */
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
 }
