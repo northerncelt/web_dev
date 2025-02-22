@@ -1,0 +1,3 @@
+[submodule "projects/web_dev/codecademy/projects/dasmotos_arts_crafts"]
+	path = projects/web_dev/codecademy/projects/dasmotos_arts_crafts
+	url = https://github.com/northerncelt/dasmotos_arts_crafts.git
