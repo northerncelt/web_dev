@@ -1,117 +1,68 @@
-/* General body styling */
+
+* {
+    font-family: Arial, Verdana, sans-serif;
+	color: #665544;
+	text-align: center;
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
+   width: 90%;
+   margin: 0 auto;
+  } 
+   
+#content {
+   overflow: auto;
+  } 
+	
+#nav, #banner, #footer {
+	margin: 1%;
+  }
+  
+#banner {
+    height: 10em;
+	margin-bottom: 1em;
+	background-image: url('../images/color-theory-banner.svg'); /* Path to your SVG file */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the background image */
+	border: .2em solid blue;
+  }
+  
+h1 {
+    color: grey;
+  }
+  
+.row {
+	margin: 1%
+  } 
+	
+.column1, .column2, .column3 {
+    width: 30%;
+    float: left;
+    margin: 1%;
+	border: .2em solid blue;
+    border-radius: .8em;
+    -moz-border-radius: .8em;
+    -webkit-border-radius: .8em;
+  }
+  
+.column3 {
+    margin-right: 0%;
+  }
 
-.header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
+li {
+    display: inline;
+	padding: 0.5em;
+  }
 
-/* Container styling */
-.global-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 980px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    height: auto;
-}
+#nav, #footer {
+    background-color: #efefef;
+	padding: 0.5em 0;
+  }
 
-.container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-/* Color inputs container styling */
-.color-inputs {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Individual color input styling */
-.color-input {
-    margin: 10px;
-    position: relative; /* Ensure the dropdown is positioned relative to the input */
-}
-
-/* Input box styling */
-.color-input input {
-    width: 200px; /* Set the width of the input boxes */
-    padding: 5px; /* Add padding inside the input boxes */
-    font-size: 16px; /* Set the font size */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 4px; /* Add rounded corners */
-}
-
-/* Color output text styling */
-.color-output {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
-/* Color preview box styling */
-.color-preview {
-    width: 100px;
-    height: 100px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-}
-
-/* Dropdown content styling */
-.dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    max-height: 200px;
-    overflow-y: auto;
-    display: none; /* Initially hide the dropdown */
-}
-
-/* Dropdown items styling */
-.dropdown-content div {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-}
-
-/* Change color of dropdown items on hover */
-.dropdown-content div:hover {
-    background-color: #f1f1f1;
-}
-
-/* Button styling */
-button {
-    margin-top: 10px; /* Add margin on top */
-    padding: 10px 20px; /* Add padding inside the button */
-    font-size: 16px; /* Set the font size */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Add rounded corners */
-    background-color: #007bff; /* Set background color */
-    color: white; /* Set text color */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Button hover styling */
-button:hover {
-    background-color: #0056b3; /* Change background color on hover */
-}
+.article {
+    height: 10em;
+	margin-bottom: 1em;
+	background-color: #efefef;
+  }
