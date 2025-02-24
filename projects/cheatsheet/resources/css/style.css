@@ -20,12 +20,12 @@ body {
   
 #banner {
     height: 10em;
-	margin-bottom: 1em;
-	background-image: url('../images/color-theory-banner.svg'); /* Path to your SVG file */
+	  margin-bottom: 1em;
+	  background-image: url('../images/color-theory-banner.svg'); /* Path to your SVG file */
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat; /* Prevents repeating */
     background-position: center; /* Centers the background image */
-	border: .2em solid blue;
+	  border: .2em solid blue;
   }
   
 h1 {
