@@ -1,0 +1,250 @@
+html {
+  margin: 0 auto;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px; /* Default font size */
+}
+
+.global-container {
+  margin: auto;
+  width: 90%;
+  border: .5rem solid #3e5e9e;
+  display: block;
+  /*background-image: url("../images/tiled-bg(2)2.jpg"); /* Path to your image */
+  /*background-image: linear-gradient(to right, #998ae4, #42a4f7, #00b8ee, #00c6d0, #49ceaa, #77d096, #9cd086, #becf7c, #cdcd79, #dbcb77, #e9c978, #f6c67b);*/
+  
+  /*background-size: 100px 100px; /* Resize the background image */
+  /*background-repeat: repeat; /* Tile the background image */
+  /*background-position: 0 0, 200px 200px;
+  position: relative; /* Ensure the container is positioned relative */
+}
+
+
+
+.banner-container {
+  height: 15rem;
+  text-align: center;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+  background-image: url("/resources/images/color-theory-banner.svg"); /* Path to your SVG file */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-position: center; /* Centers the background image */
+  border: 0.2rem solid #3b5d9f;
+  border-radius: 0.8rem;
+  padding: 0;
+  width: 80%;
+}
+
+.banner-container h1 {
+  color: #ff5722;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: .4rem
+}
+
+.color-theory-container {
+  display: flex; /* Displays the child elements in a row */
+  flex-direction: row; /* Stacks the child elements vertically */
+  justify-content: start; /* Centers the child elements vertically */
+  align-items: baseline; /* Centers the child elements horizontally*/
+  margin: auto;
+  padding: 0rem 0rem 0rem 0rem;
+  overflow: auto;
+  border: 1rem solid #f6c67b;
+  background: #dfe0df;
+  width: 80%;
+  height: 42rem;
+  overflow-y: hidden;
+  scrollbar-color: #97dde9 #7aaed1;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+
+.column-article {
+  padding: 0rem 0rem 0rem 0rem; /* Adjust padding as needed */
+  column-rule: 1px solid #f6c67b;
+  column-width: auto;
+  column-count: 5; /* Number of columns */
+  column-gap: 1em; /* Gap between columns */
+  scrollbar-color: #97dde9 #7aaed1;
+
+}
+
+.column-article h1 {
+  color: whitesmoke;
+  border-top: .25rem solid #deebf9;
+  column-span: all;
+  font-weight: bold;
+  font-size: 2rem;
+  position: sticky; /* Change from sticky to fixed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the element */
+  top: 0; /* Stick to the top */
+  width: fit-content; /* Adjust width to content */
+  background: #f6c67b;
+  padding: 0.25rem 2rem 0.25rem 2rem; /* Add padding */
+  margin-bottom: 3rem;
+  margin-top: 0;
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 10; /* Higher z-index to ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+
+.column-article h2 {
+  color: #ffffff;
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: center;
+  background: #f6c67b;
+  font-weight: bolder;
+  margin-top: .5rem;
+  margin-bottom: .25rem;
+  font-size: 1.2rem;
+  padding: .2rem 2rem .2rem 2rem;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  /*break-inside: avoid; /* Prevents the heading from being orphaned */
+}
+
+.column-article ul {
+  width: 19rem;
+  align-items: center;
+  list-style-position: inside;
+  margin: 0 auto auto auto;
+  padding-right: .5rem;
+  /*break-inside: avoid; /* Prevents the heading from being orphaned */
+}
+
+.column-article li {
+  padding: 0rem;
+  line-height: 1.3rem;
+}
+
+.table-container {
+  margin: auto;
+  border: .5rem solid #3e5e9e;
+}
+
+/* RGB Information Table */
+.rgb-table {
+  width: 80%;
+  margin: auto;
+  border-spacing: 0;
+  border: 1rem solid #aad183;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  height: 30rem;
+  text-align: center;
+  background: #dfe0df;
+  font-size: 18px; /* Change font size */
+}
+
+.rgb-table thead {
+  background-color: #aad183;
+  color: whitesmoke;
+  padding-bottom: .25rem;
+  padding-bottom: .25rem;
+}
+
+.rgb-table th {
+  color: whitesmoke;
+  font-size: 2em;
+  
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.rgb-table td {
+  padding: 2em 6em;
+  border-top: 5px solid #aad183;
+}
+
+.rgb-table ul {
+  padding: 1rem;
+  align-items: center;
+}
+
+.rgb-table li {
+  padding: 0.5rem;
+  line-height: 1.3rem;
+}
+
+/* Color Application Table */
+.css-color-applications-table {
+  margin: 3em auto auto auto;
+  width: 90%;
+  border-spacing: 0;
+  border: 1em solid #998ae4;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.css-color-applications-table thead {
+  background-color: #998ae4;
+  color: whitesmoke;
+  border-bottom: 5px solid #fcfdfd;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+.css-color-applications-table th {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  font-size: 2em;
+  border-left-color: white;
+  border-right-color: white;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+
+.css-color-applications-table tr {
+ column-width: 25%;
+}
+
+.css-color-applications-table td {
+  border: 0.2em solid #998ae4;
+  padding: 0.1em 0.1em;
+  /*width: auto;
+  max-width: 25%;*/
+}
+
+.css-color-applications-table ul {
+  align-items: center;
+}
+
+.css-color-applications-table li {
+  line-height: 1.3rem;
+  padding: .1rem;
+
+
+
+.ccatable-row1 {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.red {
+  color: rgb(255, 0, 0);
+}
+
+.green {
+  color: rgb(0, 255, 0);
+}
+
+.blue {
+  color: rgb(0, 0, 255);
+}
+
+.black {
+  color: rgb(0, 0, 0);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
