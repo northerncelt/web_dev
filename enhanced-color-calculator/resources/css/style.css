@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container styling */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Color inputs container styling */
+.color-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Individual color input styling */
+.color-input {
+    margin: 10px;
+    position: relative; /* Ensure the dropdown is positioned relative to the input */
+}
+
+/* Color output text styling */
+.color-output {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Color preview box styling */
+.color-preview {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Initially hide the dropdown */
+}
+
+/* Dropdown items styling */
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+/* Change color of dropdown items on hover */
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}

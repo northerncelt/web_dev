@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Color Calculator</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container"> <!-- Main container -->
+        <h1>Enhanced Color Calculator</h1>
+        <div class="color-inputs">
+            <!-- Hex color input -->
+            <div class="color-input"> <!-- Color input container -->
+                <label for="hex">Hex:</label>
+                <input type="text" id="hex" name="hex" placeholder="#FFFFFF" oninput="updateColor('hex')">
+            </div>
+            <!-- RGB color input -->
+            <div class="color-input"> <!-- Color input container -->
+                <label for="rgb">RGB:</label>
+                <input type="text" id="rgb" name="rgb" placeholder="255,255,255" oninput="updateColor('rgb')">
+            </div>
+            <!-- HSL color input -->
+            <div class="color-input"> <!-- Color input container -->
+                <label for="hsl">HSL:</label>
+                <input type="text" id="hsl" name="hsl" placeholder="0, 100%, 50%" oninput="updateColor('hsl')">
+            </div>
+            <!-- Named color input with dropdown -->
+            <div class="color-input"> <!-- Color input container -->
+                <label for="color">Named Color:</label>
+                <input type="text" id="color" name="color" placeholder="White" oninput="updateColor('color')" onkeyup="showColorDropdown()">
+                <div id="colorDropdown" class="dropdown-content"></div>
+            </div>
+        </div>
+        <!-- Color preview box -->
+        <div class="color-preview" id="colorPreview"></div>
+        <!-- Color output text -->
+        <div class="color-output" id="output"></div>
+        <!-- Clear button -->
+        <button onclick="clearInputs()">Clear</button>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="resources/scripts/myscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "enhanced-color-calculator",
+  "version": "1.0.0",
+  "description": "named colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\Users\\north\\OneDrive\\Documents\\GitHub\\northerncelt\\web_dev\\enhanced-color-calculator"
+  },
+  "author": "northerncelt",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.15.0",
+    "typescript-eslint": "^8.24.1"
+  }
+}
