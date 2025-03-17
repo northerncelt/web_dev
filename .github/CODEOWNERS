@@ -1,0 +1,18 @@
+
+# Example: Assign all CSS files to yourself
+*.css @northerncelt
+
+# Example: Assign all HTML files to yourself
+*.html @northerncelt
+
+# Example: Assign all files in the repository to yourself
+*.* @northerncelt
+
+# Example: Assign all files in the repository to yourself
+* @northerncelt
+
+# Example: Assign all JS files to yourself
+*.js @northerncelt
+
+# Example: Assign all IMAGE files to yourself
+*.svg, *.jpeg, *.jpg, *.wep,  @northerncelt
